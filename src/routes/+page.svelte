@@ -14,7 +14,7 @@
 
     onMount(async () => {
         await load()
-        refreshingLoad = setTimeout(load, 5000, 5000)
+        refreshingLoad = setInterval(load, 15_000)
     })
 
     onDestroy(() => {
